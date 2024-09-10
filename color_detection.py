@@ -58,7 +58,7 @@ def main():
             start_y = st.slider("", min_value=0, max_value=img_height - display_height, value=0, format="%d", step=1, key="vertical_scroll", help="Scroll up/down", label_visibility="hidden")
 
             # Crop image based on slider values
-            cropped_img = crop_image(img, start_x, start_y, display_width, display_height)
+            cropped_img = crop_image(img, start_x, start_y, display_width, display_height,label_visibility="visible")
             clicked = st.checkbox("Enable Color Detection", label_visibility="visible")  # Visible label example
 
 
