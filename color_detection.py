@@ -59,6 +59,8 @@ def main():
 
             # Crop image based on slider values
             cropped_img = crop_image(img, start_x, start_y, display_width, display_height)
+            clicked = st.checkbox("Enable Color Detection", label_visibility="visible")  # Visible label example
+
 
             # Display the cropped image
             canvas_result = st_canvas(
