@@ -51,7 +51,7 @@ def main():
             # Add sliders for panning through the image (scrolling simulation)
             # Horizontal slider at the bottom
             st.write("### Horizontal Scroll")
-            start_x = st.slider("Horizontal Scroll", min_value='-', max_value='+', value=0, format="%d", step=1, key="horizontal_scroll", help="Scroll left/right", label_visibility="hidden")
+            start_x = st.slider("Horizontal Scroll", min_value=0, max_value=img_height - display_height, value=0, format="%d", step=1, key="horizontal_scroll", help="Scroll left/right", label_visibility="hidden")
 
             # Vertical slider on the left
             st.write("### Vertical Scroll")
